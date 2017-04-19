@@ -1,0 +1,6 @@
+all: acp.c
+	gcc -Wall -Wextra -std=gnu11 -o acp acp.c
+run:
+	./acp
+clean:
+	rm acp
