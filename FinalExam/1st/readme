@@ -1,0 +1,2 @@
+1. use drand48_r/lrand48_r to generate x,y
+2. add them all together after the threads return.

@@ -1,0 +1,1 @@
+After get the arguments in argv and use execl to execute the received commands.
