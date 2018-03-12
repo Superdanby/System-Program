@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 // volatile int global=0;
-pthread_mutex_t mutex;
+// pthread_mutex_t mutex;
 
 int thread(int* arg) {
 	int cnt = 0;
@@ -38,10 +38,10 @@ int main(int argc, char const *argv[]) {
     // pthread_attr_t attr;
     // pthread_attr_init(&attr);
 	srand(time(0));
-    pthread_mutexattr_t attr;
-    pthread_mutexattr_init(&attr);
-    pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_ADAPTIVE_NP);
-	pthread_mutex_init(&mutex, &attr);
+    // pthread_mutexattr_t attr;
+    // pthread_mutexattr_init(&attr);
+    // pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_ADAPTIVE_NP);
+	// pthread_mutex_init(&mutex, &attr);
 	int once = total / threads;
 	int r = total % threads;
 	// int* times = &once;
